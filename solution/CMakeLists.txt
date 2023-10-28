@@ -1,8 +1,17 @@
-file(GLOB_RECURSE sources CONFIGURE_DEPENDS
-    src/*.c
-    src/*.h
-    include/*.h
-)
+cmake_minimum_required(VERSION 3.10)
+project(image-transformer)
 
-add_executable(image-transformer ${sources})
-target_include_directories(image-transformer PRIVATE src include)
+set(CMAKE_C_STANDARD 11)
+
+include_directories(include)
+
+add_executable(image-transformer
+        src/main.c
+        src/bmp.c
+        src/transform.c
+        src/io.c
+        src/image.c
+        include/bmp.h
+        include/transform.h
+        include/io.h
+)
