@@ -3,8 +3,8 @@
 #ifndef IO_H
 #define IO_H
 
-#include "image.h"
 #include "bmp.h"
+#include "image.h"
 
 
 struct image load_image(const char* filename);//функция загрузки .bmp в структуру image
