@@ -1,0 +1,4 @@
+C:/CProjects/my/assignment-image-rotation/tester/out/build/debug/CMakeFiles/image-matcher.dir
+C:/CProjects/my/assignment-image-rotation/tester/out/build/debug/CMakeFiles/check.dir
+C:/CProjects/my/assignment-image-rotation/tester/out/build/debug/CMakeFiles/edit_cache.dir
+C:/CProjects/my/assignment-image-rotation/tester/out/build/debug/CMakeFiles/rebuild_cache.dir

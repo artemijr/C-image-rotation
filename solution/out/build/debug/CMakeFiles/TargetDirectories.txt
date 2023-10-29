@@ -1,0 +1,12 @@
+C:/CProjects/assignment-image-rotation1/out/build/debug/CMakeFiles/test.dir
+C:/CProjects/assignment-image-rotation1/out/build/debug/CMakeFiles/edit_cache.dir
+C:/CProjects/assignment-image-rotation1/out/build/debug/CMakeFiles/rebuild_cache.dir
+C:/CProjects/assignment-image-rotation1/out/build/debug/solution/CMakeFiles/image-transformer.dir
+C:/CProjects/assignment-image-rotation1/out/build/debug/solution/CMakeFiles/test.dir
+C:/CProjects/assignment-image-rotation1/out/build/debug/solution/CMakeFiles/edit_cache.dir
+C:/CProjects/assignment-image-rotation1/out/build/debug/solution/CMakeFiles/rebuild_cache.dir
+C:/CProjects/assignment-image-rotation1/out/build/debug/tester/CMakeFiles/image-matcher.dir
+C:/CProjects/assignment-image-rotation1/out/build/debug/tester/CMakeFiles/check.dir
+C:/CProjects/assignment-image-rotation1/out/build/debug/tester/CMakeFiles/test.dir
+C:/CProjects/assignment-image-rotation1/out/build/debug/tester/CMakeFiles/edit_cache.dir
+C:/CProjects/assignment-image-rotation1/out/build/debug/tester/CMakeFiles/rebuild_cache.dir

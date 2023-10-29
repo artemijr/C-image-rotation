@@ -1,0 +1,11 @@
+# ninja log v5
+5	61	0	C:/CProjects/my/assignment-image-rotation/tester/out/build/debug/CMakeFiles/cmake.verify_globs	c0226dda67ec45e0
+1	178	7202338711238877	CMakeFiles/image-matcher.dir/src/file_cmp.obj	6799615139a5393d
+9	187	7202338711329540	CMakeFiles/image-matcher.dir/src/bmp.obj	41186d4a15bdae55
+17	189	7202338711353945	CMakeFiles/image-matcher.dir/src/main.obj	e2b91c05c9810c02
+25	203	7202338711504382	CMakeFiles/image-matcher.dir/src/util.obj	f6fbbb7b096c1bef
+203	371	7202338713117994	image-matcher.exe	772b857d23c41827
+4	41	0	C:/CProjects/my/assignment-image-rotation/tester/out/build/debug/CMakeFiles/cmake.verify_globs	c0226dda67ec45e0
+4	49	0	C:/CProjects/my/assignment-image-rotation/tester/out/build/debug/CMakeFiles/cmake.verify_globs	c0226dda67ec45e0
+3	82	0	CMakeFiles/check	8ee3d31a8d82d0dd
+3	82	0	C:/CProjects/my/assignment-image-rotation/tester/out/build/debug/CMakeFiles/check	8ee3d31a8d82d0dd

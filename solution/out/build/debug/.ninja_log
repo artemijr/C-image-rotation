@@ -1,0 +1,25 @@
+# ninja log v5
+32	224	7202330295303411	solution/CMakeFiles/image-transformer.dir/src/image.c.obj	765b226a42e97eae
+46	322	7198944572878866	tester/CMakeFiles/image-matcher.dir/src/file_cmp.c.obj	13fe1a090bf9eb9e
+65	334	7198944573278845	tester/CMakeFiles/image-matcher.dir/src/bmp.c.obj	90bc7c964d76ec88
+15	227	7202330295303411	solution/CMakeFiles/image-transformer.dir/src/transform.c.obj	8bf43fe6689937e7
+56	361	7198944573468852	tester/CMakeFiles/image-matcher.dir/src/main.c.obj	87c01e9d0c37193
+41	226	7202330295303411	solution/CMakeFiles/image-transformer.dir/src/io.c.obj	ccd6368a2fd25841
+7	223	7202330295303411	solution/CMakeFiles/image-transformer.dir/src/main.c.obj	5347034a1e9cde3f
+75	388	7198944573814537	tester/CMakeFiles/image-matcher.dir/src/util.c.obj	f2cf7499fb22d51f
+13	227	7198944692070710	tester/image-matcher.exe	60015aff5776c056
+24	225	7202330295303411	solution/CMakeFiles/image-transformer.dir/src/bmp.c.obj	f77aeb149a3b5632
+228	632	7202330299348939	solution/image-transformer.exe	f2140d362c089506
+5	46	0	C:/CProjects/assignment-image-rotation1/out/build/debug/CMakeFiles/cmake.verify_globs	8f5fd3c662f056ab
+22	327	7203263712224815	solution/CMakeFiles/image-transformer.dir/src/transform.c.obj	96a10d5e02a9b254
+13	346	7203263712413241	solution/CMakeFiles/image-transformer.dir/src/main.c.obj	4fad0b0305b28404
+59	370	7203263712652990	tester/CMakeFiles/image-matcher.dir/src/file_cmp.c.obj	70ef29835ed0f59c
+40	418	7203263713125264	solution/CMakeFiles/image-transformer.dir/src/image.c.obj	7a4aee1dc1474e2
+68	420	7203263713147979	tester/CMakeFiles/image-matcher.dir/src/main.c.obj	d0206e9e360b913
+31	421	7203263713167971	solution/CMakeFiles/image-transformer.dir/src/io.c.obj	363d9d32881ffb78
+82	423	7203263713190098	tester/CMakeFiles/image-matcher.dir/src/util.c.obj	1eddb9228bf1d67c
+4	429	7203263713262303	solution/CMakeFiles/image-transformer.dir/src/bmp.c.obj	10f6cdcfd168ec7a
+50	439	7203263713282279	tester/CMakeFiles/image-matcher.dir/src/bmp.c.obj	8d47fcb395abd714
+429	818	7203263717020300	solution/image-transformer.exe	f2140d362c089506
+439	818	7203263717020300	tester/image-matcher.exe	60015aff5776c056
+5	47	0	C:/CProjects/assignment-image-rotation1/out/build/debug/CMakeFiles/cmake.verify_globs	8f5fd3c662f056ab

@@ -1,0 +1,12 @@
+C:/CProjects/assignment-image-rotation1/out/build/ubsan/CMakeFiles/test.dir
+C:/CProjects/assignment-image-rotation1/out/build/ubsan/CMakeFiles/edit_cache.dir
+C:/CProjects/assignment-image-rotation1/out/build/ubsan/CMakeFiles/rebuild_cache.dir
+C:/CProjects/assignment-image-rotation1/out/build/ubsan/solution/CMakeFiles/image-transformer.dir
+C:/CProjects/assignment-image-rotation1/out/build/ubsan/solution/CMakeFiles/test.dir
+C:/CProjects/assignment-image-rotation1/out/build/ubsan/solution/CMakeFiles/edit_cache.dir
+C:/CProjects/assignment-image-rotation1/out/build/ubsan/solution/CMakeFiles/rebuild_cache.dir
+C:/CProjects/assignment-image-rotation1/out/build/ubsan/tester/CMakeFiles/image-matcher.dir
+C:/CProjects/assignment-image-rotation1/out/build/ubsan/tester/CMakeFiles/check.dir
+C:/CProjects/assignment-image-rotation1/out/build/ubsan/tester/CMakeFiles/test.dir
+C:/CProjects/assignment-image-rotation1/out/build/ubsan/tester/CMakeFiles/edit_cache.dir
+C:/CProjects/assignment-image-rotation1/out/build/ubsan/tester/CMakeFiles/rebuild_cache.dir

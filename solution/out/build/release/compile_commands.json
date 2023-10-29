@@ -1,0 +1,56 @@
+[
+{
+  "directory": "C:/CProjects/assignment-image-rotation1/out/build/release",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe -D_CRT_SECURE_NO_WARNINGS -IC:/CProjects/assignment-image-rotation1/solution/include -std=c17 -pedantic -Wall -Werror -ggdb -O3 -DNDEBUG -std=gnu11 -fdiagnostics-color=always -o solution\\CMakeFiles\\image-transformer.dir\\src\\main.c.obj -c C:\\CProjects\\assignment-image-rotation1\\solution\\src\\main.c",
+  "file": "C:\\CProjects\\assignment-image-rotation1\\solution\\src\\main.c",
+  "output": "solution\\CMakeFiles\\image-transformer.dir\\src\\main.c.obj"
+},
+{
+  "directory": "C:/CProjects/assignment-image-rotation1/out/build/release",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe -D_CRT_SECURE_NO_WARNINGS -IC:/CProjects/assignment-image-rotation1/solution/include -std=c17 -pedantic -Wall -Werror -ggdb -O3 -DNDEBUG -std=gnu11 -fdiagnostics-color=always -o solution\\CMakeFiles\\image-transformer.dir\\src\\bmp.c.obj -c C:\\CProjects\\assignment-image-rotation1\\solution\\src\\bmp.c",
+  "file": "C:\\CProjects\\assignment-image-rotation1\\solution\\src\\bmp.c",
+  "output": "solution\\CMakeFiles\\image-transformer.dir\\src\\bmp.c.obj"
+},
+{
+  "directory": "C:/CProjects/assignment-image-rotation1/out/build/release",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe -D_CRT_SECURE_NO_WARNINGS -IC:/CProjects/assignment-image-rotation1/solution/include -std=c17 -pedantic -Wall -Werror -ggdb -O3 -DNDEBUG -std=gnu11 -fdiagnostics-color=always -o solution\\CMakeFiles\\image-transformer.dir\\src\\transform.c.obj -c C:\\CProjects\\assignment-image-rotation1\\solution\\src\\transform.c",
+  "file": "C:\\CProjects\\assignment-image-rotation1\\solution\\src\\transform.c",
+  "output": "solution\\CMakeFiles\\image-transformer.dir\\src\\transform.c.obj"
+},
+{
+  "directory": "C:/CProjects/assignment-image-rotation1/out/build/release",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe -D_CRT_SECURE_NO_WARNINGS -IC:/CProjects/assignment-image-rotation1/solution/include -std=c17 -pedantic -Wall -Werror -ggdb -O3 -DNDEBUG -std=gnu11 -fdiagnostics-color=always -o solution\\CMakeFiles\\image-transformer.dir\\src\\io.c.obj -c C:\\CProjects\\assignment-image-rotation1\\solution\\src\\io.c",
+  "file": "C:\\CProjects\\assignment-image-rotation1\\solution\\src\\io.c",
+  "output": "solution\\CMakeFiles\\image-transformer.dir\\src\\io.c.obj"
+},
+{
+  "directory": "C:/CProjects/assignment-image-rotation1/out/build/release",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe -D_CRT_SECURE_NO_WARNINGS -IC:/CProjects/assignment-image-rotation1/solution/include -std=c17 -pedantic -Wall -Werror -ggdb -O3 -DNDEBUG -std=gnu11 -fdiagnostics-color=always -o solution\\CMakeFiles\\image-transformer.dir\\src\\image.c.obj -c C:\\CProjects\\assignment-image-rotation1\\solution\\src\\image.c",
+  "file": "C:\\CProjects\\assignment-image-rotation1\\solution\\src\\image.c",
+  "output": "solution\\CMakeFiles\\image-transformer.dir\\src\\image.c.obj"
+},
+{
+  "directory": "C:/CProjects/assignment-image-rotation1/out/build/release",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe -D_CRT_SECURE_NO_WARNINGS -IC:/CProjects/assignment-image-rotation1/tester/src -IC:/CProjects/assignment-image-rotation1/tester/include -std=c17 -pedantic -Wall -Werror -ggdb -O3 -DNDEBUG -fdiagnostics-color=always -o tester\\CMakeFiles\\image-matcher.dir\\src\\bmp.c.obj -c C:\\CProjects\\assignment-image-rotation1\\tester\\src\\bmp.c",
+  "file": "C:\\CProjects\\assignment-image-rotation1\\tester\\src\\bmp.c",
+  "output": "tester\\CMakeFiles\\image-matcher.dir\\src\\bmp.c.obj"
+},
+{
+  "directory": "C:/CProjects/assignment-image-rotation1/out/build/release",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe -D_CRT_SECURE_NO_WARNINGS -IC:/CProjects/assignment-image-rotation1/tester/src -IC:/CProjects/assignment-image-rotation1/tester/include -std=c17 -pedantic -Wall -Werror -ggdb -O3 -DNDEBUG -fdiagnostics-color=always -o tester\\CMakeFiles\\image-matcher.dir\\src\\file_cmp.c.obj -c C:\\CProjects\\assignment-image-rotation1\\tester\\src\\file_cmp.c",
+  "file": "C:\\CProjects\\assignment-image-rotation1\\tester\\src\\file_cmp.c",
+  "output": "tester\\CMakeFiles\\image-matcher.dir\\src\\file_cmp.c.obj"
+},
+{
+  "directory": "C:/CProjects/assignment-image-rotation1/out/build/release",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe -D_CRT_SECURE_NO_WARNINGS -IC:/CProjects/assignment-image-rotation1/tester/src -IC:/CProjects/assignment-image-rotation1/tester/include -std=c17 -pedantic -Wall -Werror -ggdb -O3 -DNDEBUG -fdiagnostics-color=always -o tester\\CMakeFiles\\image-matcher.dir\\src\\main.c.obj -c C:\\CProjects\\assignment-image-rotation1\\tester\\src\\main.c",
+  "file": "C:\\CProjects\\assignment-image-rotation1\\tester\\src\\main.c",
+  "output": "tester\\CMakeFiles\\image-matcher.dir\\src\\main.c.obj"
+},
+{
+  "directory": "C:/CProjects/assignment-image-rotation1/out/build/release",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe -D_CRT_SECURE_NO_WARNINGS -IC:/CProjects/assignment-image-rotation1/tester/src -IC:/CProjects/assignment-image-rotation1/tester/include -std=c17 -pedantic -Wall -Werror -ggdb -O3 -DNDEBUG -fdiagnostics-color=always -o tester\\CMakeFiles\\image-matcher.dir\\src\\util.c.obj -c C:\\CProjects\\assignment-image-rotation1\\tester\\src\\util.c",
+  "file": "C:\\CProjects\\assignment-image-rotation1\\tester\\src\\util.c",
+  "output": "tester\\CMakeFiles\\image-matcher.dir\\src\\util.c.obj"
+}
+]
