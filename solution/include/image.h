@@ -1,7 +1,9 @@
 // solution/include/image.h
 #ifndef IMAGE_H
 #define IMAGE_H
+
 #include <stdint.h>
+
 //структура пикселя red (r), green (g), and blue (b)
 struct pixel {
     uint8_t r, g, b;
