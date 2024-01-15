@@ -1,8 +1,8 @@
 // solution/src/image.c
 
 #include "image.h"
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 //функция создания image
 struct image create_image(uint64_t width, uint64_t height) {
