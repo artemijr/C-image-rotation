@@ -29,7 +29,7 @@ enum write_status {
     WRITE_ERROR
 };
 
-struct image create_image(uint64_t width, uint64_t height);//функция создания image
+const struct image create_image(uint64_t width, uint64_t height);//функция создания image
 
 void destroy_image(struct image* img);//функция освобождения памяти
 

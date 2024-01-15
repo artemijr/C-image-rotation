@@ -6,6 +6,6 @@
 #include "image.h"
 
 //функция поворота изображения
-struct image rotate(struct image source);
+const struct image rotate(struct image source);
 
 #endif
