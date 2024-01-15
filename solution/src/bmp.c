@@ -71,12 +71,18 @@ enum read_status from_bmp(FILE* in, struct image* img) {
         return READ_INVALID_BITS;
     }
 
-    //чтение данных растрового массива
+//чтение данных растрового массива
     for (uint32_t i = 0; i < img->height; i++) {
         for (uint32_t j = 0; j < img->width; j++) {
             fread(&img->data[i * img->width + j], sizeof(struct pixel), 1, in);
         }
-        fseek(in, padding, SEEK_CUR);//учитываем padding
+        // Убедитесь, что padding умещается в long
+        long padding_for_seek = (long)padding;
+        if (padding != padding_for_seek) {
+            fprintf(stderr, "Padding size is too large for fseek\n");
+            exit(EXIT_FAILURE);
+        }
+        fseek(in, padding_for_seek, SEEK_CUR); // учитываем padding
     }
 
     return READ_OK;
