@@ -4,48 +4,50 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//функция загрузки .bmp в структуру image
-struct image load_image(const char* filename) {
 
-    FILE* file = fopen(filename, "rb");//открываем файл в режиме двоичного чтения
-
-    //проверка успешности открытия
+// Функция для открытия файла с обработкой ошибок
+FILE* open_file(const char* filename, const char* mode) {
+    FILE* file = fopen(filename, mode);
     if (!file) {
         perror("Error opening file");
         exit(EXIT_FAILURE);
     }
+    return file;
+}
 
-    struct image img;
-    enum read_status status = from_bmp(file, &img);//считываем .bmp и заполняем структуру, так же получаем статус
-
-    //проверка успешности заполнения структуры image
-    if (status != READ_OK) {
-        fclose(file);
-        fprintf(stderr, "Error reading BMP file: %d\n", status);
+// Функция для закрытия файла с обработкой ошибок
+void close_file(FILE* file) {
+    if (fclose(file) == EOF) {
+        perror("Error closing file");
         exit(EXIT_FAILURE);
     }
-    fclose(file);
+}
+//функция загрузки .bmp в структуру image
+struct image load_image(const char* filename) {
+    FILE* file = open_file(filename, "rb"); // Используем open_file для открытия файла
+
+    struct image img;
+    enum read_status status = from_bmp(file, &img); // Считываем .bmp и заполняем структуру, также получаем статус
+
+    if (status != READ_OK) {
+        close_file(file); // Используем close_file для закрытия файла
+
+    }
+
+    close_file(file); // Используем close_file для закрытия файла
     return img;
 }
 
 //превращаем структуру image в .bmp
 void save_image(const struct image* img, const char* filename) {
+    FILE* file = open_file(filename, "wb"); // Используем open_file для открытия файла
 
-    FILE* file = fopen(filename, "wb");//открываем файл в режиме двоичной записи
+    enum write_status status = to_bmp(file, img); // Конвертируем структуру image в .bmp, также получаем статус
 
-    //проверка успешности открытия
-    if (!file) {
-        perror("Error opening file");
-        exit(EXIT_FAILURE);
-    }
-
-    enum write_status status = to_bmp(file, img);//конвертируем структуру image в .bmp, так же получаем статус
-
-    //проверка успешности конвертации
     if (status != WRITE_OK) {
-        fclose(file);
-        fprintf(stderr, "Error writing BMP file: %d\n", status);
-        exit(EXIT_FAILURE);
+        close_file(file); // Используем close_file для закрытия файла
+
     }
-    fclose(file);
+
+    close_file(file); // Используем close_file для закрытия файла
 }

@@ -4,6 +4,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define BMP_SIGNATURE 0x4D42
+#define BITS_PER_PIXEL 24
 
 #pragma pack(push, 1)//устанавливаем выравнивание в 1 байт
 
@@ -31,9 +33,9 @@ struct bmp_info_header {
 #pragma pack(pop)//возвращение к предыдущему значению выравнивания данных
 
 //вспомогательная функция для выравнивания строки до кратности 4 байтам
-int calculate_padding(uint32_t width) {
-    int padding = 0;
-    int row_size = (int)(width * 3);
+size_t calculate_padding(size_t width) {
+    size_t padding = 0;
+    size_t row_size = width * 3;
     if (row_size % 4 != 0) {
         padding = 4 - (row_size % 4);
     }
@@ -52,7 +54,7 @@ enum read_status from_bmp(FILE* in, struct image* img) {
     }
 
     //проверка отметки формата и проверка на то что один пиксель 24 бита
-    if (file_header.bfType != 0x4D42 || info_header.biBitCount != 24) {
+    if (file_header.bfType != BMP_SIGNATURE || info_header.biBitCount != BITS_PER_PIXEL) {
         return READ_INVALID_SIGNATURE;
     }
 
@@ -60,7 +62,7 @@ enum read_status from_bmp(FILE* in, struct image* img) {
     img->height = info_header.biHeight;
 
     // Расчет размера изображения и padding
-    int padding = calculate_padding(img->width);
+    size_t padding = calculate_padding(img->width);
 
     img->data = (struct pixel*)malloc(sizeof(struct pixel) * img->width * img->height);
 
@@ -80,37 +82,43 @@ enum read_status from_bmp(FILE* in, struct image* img) {
     return READ_OK;
 }
 
+void create_bmp_headers(struct bmp_file_header* file_header,
+                        struct bmp_info_header* info_header,
+                        const struct image* img) {
+    file_header->bfType = BMP_SIGNATURE; // 'BM'
+    file_header->bfileSize = sizeof(struct bmp_file_header) + sizeof(struct bmp_info_header) +
+                             img->width * img->height * sizeof(struct pixel) +
+                             calculate_padding(img->width) * img->height;
+    file_header->bfReserved = 0;
+    file_header->bOffBits = sizeof(struct bmp_file_header) + sizeof(struct bmp_info_header);
+
+    info_header->biSize = sizeof(struct bmp_info_header);
+    info_header->biWidth = img->width;
+    info_header->biHeight = img->height;
+    info_header->biPlanes = 1;
+    info_header->biBitCount = 24;
+    info_header->biCompression = 0;
+    info_header->biSizeImage = 0; // 0 сжатие не используется
+    info_header->biXPelsPerMeter = 0;
+    info_header->biYPelsPerMeter = 0;
+    info_header->biClrUsed = 0;
+    info_header->biClrImportant = 0;}
+
 //функция конвертации структуры image в .bmp
 enum write_status to_bmp(FILE* out, const struct image* img) {
     struct bmp_file_header file_header;
     struct bmp_info_header info_header;
 
     // Заполнение заголовка BMP
-    file_header.bfType = 0x4D42;
-    file_header.bfileSize = sizeof(file_header) + sizeof(info_header) +
-                            img->width * img->height * sizeof(struct pixel) +
-                            calculate_padding(img->width) * img->height;
-    file_header.bfReserved = 0;
-    file_header.bOffBits = sizeof(file_header) + sizeof(info_header);
+    create_bmp_headers(&file_header, &info_header, img);
 
-    info_header.biSize = sizeof(info_header);
-    info_header.biWidth = img->width;
-    info_header.biHeight = img->height;
-    info_header.biPlanes = 1;
-    info_header.biBitCount = 24;
-    info_header.biCompression = 0;
-    info_header.biSizeImage = 0; // 0 сжатие не используется
-    info_header.biXPelsPerMeter = 0;
-    info_header.biYPelsPerMeter = 0;
-    info_header.biClrUsed = 0;
-    info_header.biClrImportant = 0;
 
     //запись заголовка .bmp
     fwrite(&file_header, sizeof(file_header), 1, out);
     fwrite(&info_header, sizeof(info_header), 1, out);
 
     //запись данных растрового массива
-    int padding = calculate_padding(img->width);
+    size_t padding = calculate_padding(img->width);
     uint8_t padding_byte = 0;
     for (uint32_t i = 0; i < img->height; i++) {
         for (uint32_t j = 0; j < img->width; j++) {
